@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio web</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Add to your head tag -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <!-- main  -->
+    <div class="main">
+        <!-- header  -->
+        <header class="header ">
+            <nav class="navbar">
+                <div class="logo">Clara.</div>
+                <div class="hamburger-menu">
+                    <i class="bx bx-menu" onclick="openDrawer()"></i>
+                </div>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div id="myDrawer" class="drawer">
+                <div class="drawer-header">
+                    <div class="drawer-logo">Clara.</div>
+                    <button id="close-button" onclick="closeDrawer()">×</button>
+                </div>
+                <div class="drawer-content">
+                    <a href="#Home" onclick="handleNavClick(this)">Home</a>
+                    <a href="#about" onclick="handleNavClick(this)">About</a>
+                    <a href="#education" onclick="handleNavClick(this)">Education</a>
+                    <a href="#skills" onclick="handleNavClick(this)">Skills</a>
+                    <a href="#contact" onclick="handleNavClick(this)">Contact</a>
+                </div>
+            </div>
+            <div id="overlay" class="overlay" onclick="closeDrawer()"></div>
+        </header>
+        <!-- header   -->
+        <!-- main-Content  -->
+        <main class="contnet-wrapper">
+            <!-- treejs animation  -->
+            <div id="scene-container"></div>
+            <!-- home  -->
+            <section class="home" id="Home">
+                <div class="content">
+                    <h1 class="title" data-aos="fade-down">Hi,I'm Clara Montgomery</h1>
+                    <h4 class="subtilte typewrite" data-aos="fade-down" data-period="1000"
+                        data-type='[ "Innovative Digital Designer & Artist." ]'></h4>
+
+                    <p data-aos="fade-up">
+                        I am an innovative Digital Designer & Artist with a passion for
+                        creating captivating visual experiences that merge artistry with
+                        technology. My approach combines creative vision with technical
+                        expertise to deliver designs that not only meet aesthetic
+                        standards but also drive engagement and user satisfaction.
+                    </p>
+                    <div class="button-group">
+                        <button data-aos="fade-right" data-aos-delay="500">Hire Me</button>
+                        <button data-aos="fade-left" data-aos-delay="500">About me</button>
+                    </div>
+
+                    <div class="social-group">
+                        <div data-aos="zoom-in"><i class="bx bxl-facebook"></i></div>
+                        <div data-aos="zoom-in"><i class="bx bxl-linkedin"></i></div>
+                        <div data-aos="zoom-in"><i class="bx bxl-twitter"></i></div>
+                    </div>
+                </div>
+
+                <div class="shape-container" data-aos="fade-left" data-aos-delay="800">
+                    <div class="shape">
+                        <img src="pngtree-a-smiling-female-employee-posing-png-image_14113973-removebg-preview.png"
+                            alt="Profile" class="profile-image" />
+                    </div>
+                </div>
+            </section>
+            <!-- home  -->
+            <!-- about  -->
+            <section class="about" id="about">
+                <h2 class="title" data-aos="fade-down" data-aos-delay="100">About <b>Me</b></h2>
+                <div class="wrapper">
+                    <div class="shape-container" data-aos="fade-right" data-aos-delay="300">
+                        <div class="shape">
+                            <img src="pngtree-a-smiling-female-employee-posing-png-image_14113973-removebg-preview.png"
+                                alt="Profile" class="profile-image" />
+                        </div>
+                    </div>
+                    <div class="content" data-aos="fade-left" data-aos-delay="500">
+                        <p>
+                            I am a Digital Designer & Artist with a passion for creating
+                            captivating visual experiences that merge artistry with
+                            technology. My approach combines creative vision with technical
+                            expertise to deliver designs that not only meet aesthetic
+                            standards but also drive engagement and user satisfaction.
+                        </p>
+                        <p>
+                            I have a strong foundation in graphic design, web design, and
+                            digital media production, with a focus on creating innovative
+                            designs that elevate brands and drive results. I am skilled in
+                            Adobe Creative Suite, HTML, CSS, and JavaScript, and have
+                            experience working with clients in a variety of industries.
+                        </p>
+
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </section>
+            <!-- about  -->
+            <!-- education  -->
+            <section class="education" id="education">
+                <h2 data-aos="fade-down" data-aos-delay="100" class="title">My <b>Jorney</b></h2>
+                <div class="content">
+                    <div class="experience">
+                        <h3 class="title" data-aos="fade-down" data-aos-delay="300">Experience</h3>
+                        <div class="education-item" data-aos="zoom-in" data-aos-delay="500">
+                            <small class="education-date">2021 - Present</small>
+                            <h3 class="education-title">Senior Digital Designer</h3>
+                            <p class="education-school">Creative Pulse Studio</p>
+
+                            <ul class="description">
+                                <li>
+                                    Lead designer for major client projects, delivering
+                                    cutting-edge digital solutions that increased client
+                                    engagement by 45%
+                                </li>
+                                <li>
+                                    Spearheaded the redesign of 3 major e-commerce platforms,
+                                    resulting in a 60% improvement in user experience metrics
+                                </li>
+                                <li>
+                                    Managed a team of 4 junior designers, providing mentorship
+                                    and creative direction
+                                </li>
+                                <li>
+                                    Created innovative digital artwork for social media
+                                    campaigns reaching over 1M viewers
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="education-item" data-aos="zoom-in" data-aos-delay="700">
+                            <small class="education-date">2018 - 2021</small>
+                            <h2 class="education-title">Digital Artist & UI Designer</h2>
+                            <p class="education-school">ArtTech Solutions</p>
+
+                            <ul class="description">
+                                <li>
+                                    Developed unique brand identities for 20+ startup companies
+                                </li>
+                                <li>
+                                    Created responsive web designs and interactive user
+                                    interfaces for mobile applications
+                                </li>
+                                <li>
+                                    Collaborated with development teams to ensure precise
+                                    implementation of design concepts
+                                </li>
+                                <li>
+                                    Produced digital illustrations and animations for marketing
+                                    campaigns
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <h3 class="title" data-aos="fade-down" data-aos-delay="900">Education</h3>
+                        <div class="education-item" data-aos="zoom-in" data-aos-delay="1100">
+                            <small class="education-date">2018</small>
+                            <h3 class="education-title">
+                                Bachelor of Fine Arts in Digital Design
+                            </h3>
+                            <p class="education-school">Rhode Island School of Design</p>
+
+                            <ul class="description">
+                                <li>Specialized in Interactive Design and Digital Art</li>
+                                <li>Graduated with Honors</li>
+                                <li>
+                                    Senior thesis: "The Convergence of Digital Art and User
+                                    Experience"
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- education  -->
+            <!-- skills  -->
+            <section class="skills" id="skills">
+                <h2 class="title" data-aos="fade-down" data-aos-delay="100">My <b>Skills</b></h2>
+                <div class="content">
+                    <div class="crateive-skils">
+                        <h3 class="skills-titles" data-aos="fade-down" data-aos-delay="300">Creative Skills</h3>
+                        <div class="wrapper" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="550">
+                                <h3 class="skills-title">Brand Identity Design</h3>
+                                <div class="progress-bar-main">
+                                    <span>90%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="600">
+                                <h3 class="skills-title">Visual Storytelling</h3>
+                                <div class="progress-bar-main">
+                                    <span>60%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="650">
+                                <h3 class="skills-title">Color Theory</h3>
+                                <div class="progress-bar-main">
+                                    <span>80%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="700">
+                                <h3 class="skills-title">Typography</h3>
+                                <div class="progress-bar-main">
+                                    <span>40%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="750">
+                                <h3 class="skills-title">Digital Painting</h3>
+                                <div class="progress-bar-main">
+                                    <span>50%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="800">
+                                <h3 class="skills-title">Concept Development</h3>
+                                <div class="progress-bar-main">
+                                    <span>65%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-right" data-aos-delay="850">
+                                <h3 class="skills-title">User-Centered Design</h3>
+                                <div class="progress-bar-main">
+                                    <span>95%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technical-skills">
+                        <h3 class="skills-titles" data-aos="fade-down" data-aos-delay="300">Technical Skills</h3>
+                        <div class="wrapper" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="550">
+                                <h3 class="skills-title">
+                                    Adobe Creative Suite (Photoshop, Illustrator, XD)
+                                </h3>
+                                <div class="progress-bar-main">
+                                    <span>80%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="600">
+                                <h3 class="skills-title">Figma & Sketch</h3>
+                                <div class="progress-bar-main">
+                                    <span>90%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="650">
+                                <h3 class="skills-title">3D Modeling and Animation</h3>
+                                <div class="progress-bar-main">
+                                    <span>75%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="700">
+                                <h3 class="skills-title">Motion Graphics</h3>
+                                <div class="progress-bar-main">
+                                    <span>85%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="750">
+                                <h3 class="skills-title">UI/UX Design</h3>
+                                <div class="progress-bar-main">
+                                    <span>95%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="800">
+                                <h3 class="skills-title">Digital Illustration</h3>
+                                <div class="progress-bar-main">
+                                    <span>100%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills-item" data-aos="fade-left" data-aos-delay="850">
+                                <h3 class="skills-title">HTML/CSS</h3>
+                                <div class="progress-bar-main">
+                                    <span>90%</span>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- skills  -->
+            <!-- contact  -->
+            <section class="contact" id="contact">
+                <h2 class="title" data-aos="fade-down" data-aos-delay="100">Contact <b>Me</b></h2>
+                <div class="content" data-aos="zoom-in" data-aos-delay="300">
+                    <p class="contact-text">
+                        I am currently available for freelance projects and full-time
+                        opportunities. If you would like to collaborate on a project or
+                        discuss potential opportunities, please feel free to reach out to
+                        me using the contact form below.
+                    </p>
+                    <div class="form">
+                        <div class="form-group-main">
+                            <div class="form-group">
+
+                                <input type="text" id="email" placeholder="Full Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email Address" />
+                            </div>
+                        </div>
+                        <div class="form-group-main">
+                            <div class="form-group">
+                                <input type="email" id="email" name="text" placeholder="Mobile number" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="text" placeholder="Subject" />
+                            </div>
+                        </div>
+
+                        <div class="form-group2">
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </section>
+            <!-- contact  -->
+        </main>
+        <!-- main-Content  -->
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="content">
+                <p>&copy; 2025 CodeCraft Nexus. | All rights reserved.</p>
+            </div>
+            <div class="back-to-top"><i class='bx bxs-arrow-to-top'></i></div>
+        </footer>
+        <!-- footer  -->
+    </div>
+
+    <script>
+        const navbar = document.querySelector(".header");
+        function stickynavbar() {
+            if (window.scrollY >= 200) {
+                navbar.classList.add("sttiky");
+            } else {
+                navbar.classList.remove("sttiky");
+            }
+        }
+        window.addEventListener("scroll", stickynavbar);
+    </script>
+
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,   // Animation duration
+            once: true,       // Animation occurs only once
+            offset: 100       // Offset (in px) from the original trigger point
+        });
+    </script>
+
+
+    <script src="animaton.js"></script>
+    <script src="typrwrittereffect.js"></script>
+    <script src="navbar.js"></script>
+    <script src="drawer.js"></script>
+</body>
+
+</html>

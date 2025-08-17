@@ -1,0 +1,380 @@
+@media only screen and (max-width: 1400px) {
+    .header .navbar{
+        padding:  0 50px;
+    }
+
+    .education .content{
+        padding: 0 100px;
+    }
+
+    .skills .content .crateive-skils, .skills .content .technical-skills{
+        width: 45%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+     
+     .home{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 200px 200px;
+     }
+
+
+     .home .content{
+        width: 90%;
+        padding: 20px 0;
+     }
+
+     .about{
+        padding: 0 250px;
+     }
+
+     .about .wrapper .content{
+        padding: 0 50px;
+     }
+
+     .education{
+        padding: 100px 0px;
+        height: auto;
+     }
+    .education .content{
+        padding: 0 300px;
+    }
+
+    .skills .content .crateive-skils, .skills .content .technical-skills{
+        width: 38%;
+    }
+
+    .education .content div div{
+        width: 90%;
+    }
+   
+    
+    
+}
+
+@media only screen and (max-width: 991px) {
+    .header .navbar ul{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .home{
+       flex-direction: column-reverse;
+       height: auto;
+       justify-content: center;
+       align-items: center;
+       padding: 200px 100px;
+    }
+
+    .home .content{
+       width: 90%;
+       padding: 50px 0;
+    }
+
+    .about{
+       padding: 250px 0px;
+       height: auto;
+    }
+
+    .about .wrapper {
+       flex-direction: column;
+    }
+
+    .about .wrapper .content{
+       width: 80%;
+       padding-top: 100px;
+       text-align: justify;
+
+    }
+
+    .education{
+        padding: 100px 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .education .content{
+        padding: 100px 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education .content div{
+        width: 90%;
+    }
+
+    .education .content div div{
+        width: 100%;
+    }
+    .skills{
+        height: auto;
+    }
+    .skills .content{
+        flex-direction: column;
+    }
+
+    .skills .content .crateive-skils, .skills .content .technical-skills{
+        width: 100%;
+    }
+
+    .contact .content{
+        width: 80%;
+    }
+
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .home{
+       flex-direction: column-reverse;
+       height: auto;
+       justify-content: center;
+       align-items: center;
+       padding: 200px 50px;
+    }
+
+    .home .content{
+       width: 90%;
+       padding: 50px 0;
+    }
+
+    .home .content h1{
+        font-size: 30px;
+    }
+
+    .home .content p{
+        font-size: 15px;
+    }
+
+    .shape-container {
+        width: 350px;
+        height: 350px;
+    }
+
+
+    .about .wrapper {
+       flex-direction: column;
+    }
+
+    .about .wrapper .content{
+       width: 90%;
+       padding-top: 100px;
+       text-align: justify;
+
+    }
+
+    .education{
+        padding: 100px 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .education .content{
+        padding: 100px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education .content div{
+        width: 90%;
+    }
+   
+
+    .skills{
+        height: auto;
+    }
+    .skills .content{
+        flex-direction: column;
+    }
+
+    .skills .content .crateive-skils, .skills .content .technical-skills{
+        width: 100%;
+    }
+
+    .contact .content{
+        width: 80%;
+    }
+   
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .home{
+       flex-direction: column-reverse;
+       height: auto;
+       justify-content: center;
+       align-items: center;
+       padding: 200px 0px;
+    }
+
+    .home .content{
+       width: 90%;
+       padding: 50px 0;
+    }
+
+    .home .content h1{
+        font-size: 30px;
+    }
+
+    .home .content p{
+        font-size: 15px;
+    }
+
+    .shape-container {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .about  .shape-container {
+        width: 250px;
+        height: 250px;
+    }
+    .about .wrapper {
+       flex-direction: column;
+    }
+
+    .about .wrapper .content{
+       width: 95%;
+       padding-top: 100px;
+       text-align: justify;
+       padding: 50px 0;
+
+    }
+
+    .education{
+        padding: 100px 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .education .content{
+        padding: 100px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education .content div{
+        width: 95%;
+    }
+   
+
+    .skills{
+        height: auto;
+    }
+    .skills .content{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .skills .content .crateive-skils, .skills .content .technical-skills{
+        padding:  0 0;
+    }
+
+    .contact .content{
+        width: 90%;
+    }
+   
+}
+
+
+@media only screen and (max-width: 450px) {
+    .home .content h1{
+        font-size: 20px;
+    }
+
+    .home .content p{
+        font-size: 12px;
+    }
+    .about{
+       padding: 250px 0px;
+       height: auto;
+    }
+
+    .about  .shape-container {
+        width: 250px;
+        height: 250px;
+    }
+    .about .wrapper {
+       flex-direction: column;
+    }
+
+    .about .wrapper .content{
+       width: 90%;
+       font-size: 14px;
+
+    }
+
+    .education{
+        padding: 100px 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .education .content{
+        padding: 100px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .education .content div{
+        width: 95%;
+    }
+   
+
+    .skills{
+        height: auto;
+    }
+    .skills .content{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .skills .content .crateive-skils, .skills .content .technical-skills{
+        padding:  0 0;
+    }
+
+    .contact{
+        height: auto;
+        padding-bottom: 100px;
+
+    }
+
+    .contact .content{
+        width: 95%;
+    }
+
+    
+
+    .contact .content .form-group-main .form-group{
+        width: 100%;
+    }
+
+    .contact .content .form-group-main{
+        flex-direction: column;
+    }
+
+    .contact .content p{
+        font-size: 14px;
+    }
+
+    .footer{
+        padding: 0 20px;
+    }
+   
+}
